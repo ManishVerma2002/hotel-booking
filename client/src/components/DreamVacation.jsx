@@ -4,6 +4,9 @@ import Image1 from "../assets/Post/Rectangle 8.png";
 import Image2 from "../assets/Post/Rectangle 9.png";
 import Image3 from "../assets/Post/Rectangle 10.png";
 import Image4 from "../assets/Post/Rectangle 11.png";
+import Image5 from "../assets/Post/Rectangle 17.png";
+import Image6 from "../assets/Post/Rectangle 8 (1).png"
+import Image7 from "../assets/Post/Rectangle 16.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -32,7 +35,11 @@ const DreamVacation = () => {
     { name: "Australia", image: Image1 },
     { name: "Japan", image: Image2 },
     { name: "New Zealand", image: Image3 },
-    { name: "Greece", image: Image4 },
+    // { name: "Greece", image: Image4 },
+    { name: "Nepal", image: Image5},
+    { name: "India", image: Image6 },
+    { name: "America", image: Image7 },
+    
   ];
 
   // Function to find the image for a category

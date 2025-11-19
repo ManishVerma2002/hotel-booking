@@ -151,7 +151,7 @@ const Payment = () => {
   };
 
   return (
-    <div className="p-8 max-w-2xl mx-auto">
+    <div className="p-8 max-w-full mx-auto">
       <h1 className="text-2xl font-semibold mb-6">Payment</h1>
 
       {/* Products Summary */}
@@ -259,7 +259,7 @@ const Payment = () => {
         <button
           type="submit"
           disabled={!stripe || loading}
-          className={`w-full px-6 py-3 text-white rounded-lg ${
+          className={` px-6 py-3 text-white rounded-lg ${
             loading ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600"
           }`}
         >

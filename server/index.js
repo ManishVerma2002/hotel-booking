@@ -7,13 +7,13 @@ import bodyParser from "body-parser";
 import Stripe from "stripe";
 
 
-import redisClient from "./src/config/redis.js";
-
+import redisClient from "./src/config/redis.js"; 
 import { connectToDb } from "./src/config/db.js";
 import authRoutes from "./src/routes/User.js";
 import postRoutes from "./src/routes/Post.js";
 import categoryRoutes from "./src/routes/Category.js";
 import bookingRoutes from "./src/routes/Booking.js";
+import contactRoutes from "./src/routes/Contact.js";
 
 dotenv.config();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
@@ -41,7 +41,7 @@ app.use("/auth/api", authRoutes);
 app.use("/api/post", postRoutes);
 app.use("/api/category", categoryRoutes);
 app.use("/api/booking", bookingRoutes);
-
+app.use("/api/contact", contactRoutes);
 
 
 const PORT = process.env.PORT || 3000;
