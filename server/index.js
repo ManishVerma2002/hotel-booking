@@ -19,7 +19,7 @@ dotenv.config();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // connect to database
-await connectToDb();
+connectToDb();
 
 const app = express();
 

@@ -47,8 +47,8 @@ function App() {
         <Route path="/category/:slug" element={<SelectedCategory />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/discover" element={<Discover />} />
-        <Route path="/activities" element={<Activities />} />
+        {/* <Route path="/discover" element={<Discover />} />
+        <Route path="/activities" element={<Activities />} /> */}
 
         <Route path="/user" element={<UserRoutes />}>
           <Route path="" element={<UserDashboard />} />
